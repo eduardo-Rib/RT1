@@ -1,19 +1,18 @@
-import Endereco from "./endereco"
-import Funcionario from "./funcionario"
-import Telefone from "./telefone"
+import Endereco from "./endereco.js"
+import Funcionario from "./funcionario.js"
 
 export default class Empresa{
     public razaoSocial: string
     public nomeFantasia: string
     public cnpj: string
     public endereco: Endereco
-    public funcionario: Funcionario
+    public funcionarios: Funcionario[]
 
-    construct(razaoSocial: string, nomeFantasia: string, cnpj: string, endereco: Endereco, funcionario: Funcionario){
+    constructor(razaoSocial: string, nomeFantasia: string, cnpj: string, endereco: Endereco, funcionarios: Funcionario[]){
         this.razaoSocial = razaoSocial
         this.nomeFantasia = nomeFantasia
         this.cnpj = cnpj
         this.endereco = endereco
-        this.funcionario = funcionario
+        this.funcionarios = funcionarios
     }
 }

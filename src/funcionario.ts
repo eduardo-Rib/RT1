@@ -1,5 +1,5 @@
-import Endereco from "./endereco"
-import Telefone from "./telefone"
+import Endereco from "./endereco.js"
+import Telefone from "./telefone.js"
 
 export default class Funcionario{
     public nome: string
